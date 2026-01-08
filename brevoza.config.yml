@@ -1,0 +1,3 @@
+collections:
+  presidents:
+    config: presidents-config.yml
