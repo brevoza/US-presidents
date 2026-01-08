@@ -1,0 +1,30 @@
+collection: presidents
+description: >
+  Dataset of U.S. presidents
+
+storage:
+  path: presidents/
+  format: json
+  idField: id
+
+schema:
+  type: object
+  required:
+    - id
+    - name
+
+  properties:
+    id:
+      type: string
+      description: Unique slug identifier
+
+    name:
+      type: string
+
+    startDate:
+      type: date
+      description: the day they took office
+
+    endDate:
+      type: date
+      description: the day they left office
